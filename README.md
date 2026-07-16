@@ -24,6 +24,6 @@ Purr'Coffee is a highly interactive Point of Sale interface designed for cafes. 
 
 ## ⚙️ Local Setup
 Since this project requires no package managers, running it locally is straightforward:
-1. Clone the repository: `git clone https://github.com/leandro-dias/purr-coffee.git`
+1. Clone the repository: `git clone https://github.com/leandro-dias/kicoffee.git`
 2. Open `index.html` in your browser or use the **Live Server** extension in VSCode.
 3. *Optional:* If you wish to edit styles, run the **Live Sass Compiler** extension to watch the `/scss` directory and output to `/css/main.css`.
