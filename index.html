@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Ki'coffee</title>
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar__logo">Ki'Coffee</div>
+            <nav class="sidebar__nav">
+                <a href="#" class="sidebar__link">Home page</a>
+                <a href="#" class="sidebar__link sidebar__link--active">Menu</a>
+                <a href="#" class="sidebar__link">My orders</a>
+                <a href="#" class="sidebar__link">History</a>
+                <a href="#" class="sidebar__link">Partners</a>
+                <a href="#" class="sidebar__link">Settings</a>
+                <a href="#" class="sidebar__link">Donate to shelter</a>
+            </nav>
+            <a href="#" class="sidebar__logout">Log out</a>
+        </aside>
+        <main class="main-content">
+            <div class="category-tabs">
+                <button class="tab tab--active">Coffee</button>
+                <button class="tab">Non Coffee</button>
+                <button class="tab">Food</button>
+                <button class="tab">Dessert</button>
+            </div>
+            <h1 class="section-title">Coffee Menu</h1>
+                <div class="product-grid">
+                    <article class="product-card">
+                        <div class="product-card__image"></div>
+                        <h3 class="product-card__name">Cappuccino</h3>
+                        <p class="product-card__price">$ 4.98</p>
+                        <p class="product-card__description">
+                            The combination of coffee, milk, and palm sugar makes this drink have a delicious taste.
+                        </p>
+
+                        <div class="product-card__size">
+                            <span class="product-card__size-label">Size</span>
+                            <button class="size-btn size-btn--active">Small</button>
+                            <button class="size-btn">Large</button>
+                        </div>
+
+                        <div class="product-card__footer">
+                            <div class="qty-control">
+                                <button class="qty-control__btn">-</button>
+                                <span class="qty-control__value">3</span>
+                                <button class="qty-control__btn">+</button>
+                            </div>
+                            <button class="btn btn--primary">Added to cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__image"></div>
+                        <h3 class="product-card__name">Coffee Latte</h3>
+                        <p class="product-card__price">$ 5.98</p>
+                        <p class="product-card__description">
+                            This caffe latte or coffee latte is one of the popular types of milk coffee.
+                        </p>
+
+                        <div class="product-card__size">
+                            <span class="product-card__size-label">Size</span>
+                            <button class="size-btn size-btn--active">Small</button>
+                            <button class="size-btn">Large</button>
+                        </div>
+
+                        <div class="product-card__footer">
+                            <div class="qty-control">
+                                <button class="qty-control__btn">-</button>
+                                <span class="qty-control__value">2</span>
+                                <button class="qty-control__btn">+</button>
+                            </div>
+                            <button class="btn btn--primary">Added to cart</button>
+                        </div>
+                    </article>
+                </div>
+        </main>
+            <aside class="cart-panel">
+                <header class="cart-panel__user">
+                    <div class="cart-panel__user-info">
+                        <span class="cart-panel__user-name">Leandro Dias</span>
+                        <span class="cart-panel__user-email">leandro@gmail.com</span>
+                    </div>
+                    <div class="cart-panel__avatar"></div>
+                </header>
+
+                <div class="cart-panel__title-row">
+                    <h2 class="cart-panel__title">Cart</h2>
+                    <span class="cart-panel__order-id">Order #3243</span>
+                </div>
+
+                <div class="order-type">
+                    <button class="order-type__btn order-type__btn--active">Delivery</button>
+                    <button class="order-type__btn">Dine in</button>
+                    <button class="order-type__btn">Take away</button>
+                </div>
+
+                <div class="cart-panel__items">
+                    <div class="cart-item">
+                        <div class="cart-item__image"></div>
+                        <div class="cart-item__info">
+                            <span class="cart-item__name">Cappuccino</span>
+                            <span class="cart-item__variant">Small - 200g</span>
+                            <span class="cart-item__price">$ 14.94</span>
+                        </div>
+                        <div class="qty-control">
+                            <button class="qty-control__btn">-</button>
+                            <span class="qty-control__value">3</span>
+                            <button class="qty-control__btn">+</button>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item__image"></div>
+                        <div class="cart-item__info">
+                            <span class="cart-item__name">Coffee Latte</span>
+                            <span class="cart-item__variant">Small - 200g</span>
+                            <span class="cart-item__price">$ 5.98</span>
+                        </div>
+                        <div class="qty-control">
+                            <button class="qty-control__btn">-</button>
+                            <span class="qty-control__value">1</span>
+                            <button class="qty-control__btn">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="coupon">
+                    <input type="text" class="coupon__input" placeholder="Enter coupon code">
+                    <button class="coupon__btn">Apply</button>
+                </div>
+
+                <div class="cart-panel__summary">
+                    <div class="summary-row">
+                        <span>Items</span>
+                        <span>$ 20.92</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Discounts</span>
+                        <span>-$ 0.00</span>
+                    </div>
+                    <div class="summary-row summary-row--total">
+                        <span>Total</span>
+                        <span>$ 20.92</span>
+                    </div>
+                </div>
+
+                <button class="btn btn--primary btn--full">Place an order</button>
+            </aside>
+    </div>
+</body>
+</html>

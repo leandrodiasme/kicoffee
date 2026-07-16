@@ -1,0 +1,159 @@
+// _cart-item.scss
+@use '../abstracts/variables' as *;
+
+.cart-panel {
+  display: flex;
+  flex-direction: column;
+
+  &__user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacing-lg;
+  }
+
+  &__user-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__user-name {
+    font-weight: 600;
+    color: $color-text;
+  }
+
+  &__user-email {
+    font-size: $font-size-sm;
+    color: $color-text-muted;
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $color-text-muted;
+  }
+
+  &__title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: $spacing-md;
+  }
+
+  &__title {
+    color: $color-text;
+  }
+
+  &__order-id {
+    font-size: $font-size-sm;
+    color: $color-text-muted;
+  }
+}
+
+// ===== Abas Delivery / Dine in / Take away =====
+.order-type {
+  display: flex;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: $border-radius-md;
+  padding: $spacing-xs;
+  margin-bottom: $spacing-lg;
+
+  &__btn {
+    flex: 1;
+    padding: $spacing-sm;
+    border-radius: $border-radius-sm;
+    color: $color-text-muted;
+    font-size: $font-size-sm;
+    cursor: pointer;
+
+    &--active {
+      background: $color-text;
+      color: $color-bg;
+      font-weight: 600;
+    }
+  }
+}
+
+// ===== Item individual do carrinho =====
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-md;
+
+  &__image {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: $border-radius-sm;
+    flex-shrink: 0; // impede a imagem de "espremer" quando o texto for grande
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__name {
+    color: $color-text;
+    font-weight: 500;
+  }
+
+  &__variant {
+    font-size: $font-size-sm;
+    color: $color-text-muted;
+  }
+
+  &__price {
+    font-weight: 600;
+    color: $color-text;
+    margin-top: $spacing-xs;
+  }
+}
+
+// ===== Cupom =====
+.coupon {
+  display: flex;
+  gap: $spacing-sm;
+  margin: $spacing-lg 0;
+
+  &__input {
+    flex: 1;
+    padding: $spacing-sm $spacing-md;
+    border-radius: $border-radius-md;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+    color: $color-text;
+    min-width: 0;
+  }
+
+  &__btn {
+    padding: $spacing-sm $spacing-md;
+    border-radius: $border-radius-md;
+    background: $color-text;
+    color: $color-bg;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+// ===== Resumo de preços =====
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $spacing-sm;
+  color: $color-text-muted;
+
+  &--total {
+    color: $color-text;
+    font-weight: 700;
+    font-size: $font-size-lg;
+    margin-top: $spacing-md;
+
+    span:last-child {
+      color: $color-accent;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+// _typography.scss
+@use '../abstracts/variables' as *;
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  color: $color-text;
+  background-color: $color-bg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: $font-size-xl;
+}
+
+h2 {
+  font-size: $font-size-lg;
+}
+
+p {
+  font-size: $font-size-base;
+  color: $color-text-muted;
+}

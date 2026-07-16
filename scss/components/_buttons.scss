@@ -1,0 +1,50 @@
+// _buttons.scss
+@use '../abstracts/variables' as *;
+
+// dentro de _buttons.scss, junto do .btn existente
+.btn {
+  padding: $spacing-sm $spacing-md;
+  border-radius: $border-radius-md;
+  font-family: $font-primary;
+
+  &--primary {
+    background: $color-primary;
+    color: white;
+  }
+
+  &--full {
+    width: 100%;
+    padding: $spacing-md;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+}
+// ===== Category tabs =====
+.category-tabs {
+  display: flex;
+  gap: $spacing-sm;
+  margin-bottom: $spacing-lg;
+}
+
+.tab {
+  padding: $spacing-sm $spacing-lg;
+  border-radius: 999px; // pílula completa
+  background: white;
+  color: $color-text-muted;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: $font-primary;
+  font-size: $font-size-sm;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $color-accent;
+  }
+
+  &--active {
+    background: $color-accent;
+    color: white;
+    border-color: $color-accent;
+  }
+}

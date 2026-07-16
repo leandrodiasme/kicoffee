@@ -1,0 +1,16 @@
+// 1. Abstracts primeiro (variáveis e mixins, sem gerar CSS sozinhos)
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+
+// 2. Base (resets e tipografia)
+@use 'base/reset';
+@use 'base/typography';
+
+// 3. Layout (estruturas macro)
+@use 'layout/grid';
+@use 'layout/sidebar';
+
+// 4. Components (peças menores e reutilizáveis)
+@use 'components/buttons';
+@use 'components/product-card';
+@use 'components/cart-item';
